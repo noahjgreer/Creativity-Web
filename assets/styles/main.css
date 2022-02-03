@@ -25,14 +25,14 @@ html {
 
 h1 {
   font-variation-settings: "wght" 700;
-  font-family: Raleway;
+  font-family: -apple-system, BlinkMacSystemFont, Raleway;
   text-align: center;
   font-size: 7.5rem;
 }
 
 h2 {
   font-variation-settings: "wght" 700;
-  font-family: Raleway;
+  font-family: -apple-system, BlinkMacSystemFont, Raleway;
   text-align: center;
   font-weight: 300;
   font-size: 3rem;

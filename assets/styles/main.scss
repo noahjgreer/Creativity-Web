@@ -18,7 +18,7 @@
 @mixin headings {
     font: {
         variation-settings: "wght" 700;
-        family: Raleway;
+        family: -apple-system, BlinkMacSystemFont, Raleway;
     }
     text-align: center;
 }
