@@ -132,12 +132,12 @@ a[type=button2] {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe;
 }
 
 a[type=button] {
   background-color: #5AC754;
   color: white;
-  font-family: Segoe;
   font-weight: 700;
   font-size: 1.5rem;
   padding: 1.25rem;
@@ -166,7 +166,6 @@ a[type=button2]:active {
 a[type=button2] {
   background-color: white;
   color: #5AC754;
-  font-family: Segoe;
   font-weight: 700;
   font-size: 1.5rem;
   padding: 1.25rem;

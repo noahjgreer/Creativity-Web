@@ -116,12 +116,12 @@ footer {
 a[type=button],
 a[type=button2] {
     user-select: none;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe;
 }
 
 a[type=button] {
     background-color: $main;
     color: white;
-    font-family: Segoe;
     font-weight: 700;
     font-size: 1.5rem;
     padding: 1.25rem;
@@ -146,7 +146,6 @@ a[type=button2]:active {
 a[type=button2] {
     background-color: white;
     color: $main;
-    font-family: Segoe;
     font-weight: 700;
     font-size: 1.5rem;
     padding: 1.25rem;
