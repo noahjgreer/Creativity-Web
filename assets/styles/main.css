@@ -128,6 +128,8 @@ footer p {
 
 a[type=button],
 a[type=button2] {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -152,7 +154,8 @@ a[type=button] {
 }
 
 a[type=button]:hover {
-  background-color: #33ad2c;
+  -webkit-filter: contrast(1.3);
+          filter: contrast(1.3);
   -webkit-box-shadow: 0px 10px 75px 0px rgba(0, 0, 0, 0.178);
           box-shadow: 0px 10px 75px 0px rgba(0, 0, 0, 0.178);
 }
@@ -220,6 +223,91 @@ gallery > div {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 1rem;
+}
+
+.generic {
+  background-color: white;
+  color: #5AC754;
+}
+
+.logo-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-article > img {
+  width: 50%;
+}
+
+.logo-article > div {
+  padding-left: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+card {
+  margin-block: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+card > img {
+  margin: 0.5rem;
+  width: 40%;
+  min-width: 20rem;
+  border-radius: 3rem;
+  -webkit-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+          box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+  aspect-ratio: 1;
+}
+
+card > div {
+  margin: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 55%;
+}
+
+card > div a[type=button] {
+  margin-block: 0.5rem;
+}
+
+a[type=button].discord {
+  background-color: #5865F2;
+}
+
+a[type=button].github {
+  background-color: #252525;
 }
 
 /* Phones */
