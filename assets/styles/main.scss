@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Segoe;
+    src: url(../fonts/SegoeUI-VF.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+}
+
+@mixin headings {
+    font: {
+        variation-settings: "wght" 700;
+        family: Raleway;
+    }
+    text-align: center;
+}
+
+@mixin shadow {
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+}
+
+$main: #5AC754;
+body,
+html {
+    margin: 0px;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
+h1 {
+    @include headings;
+    font: {
+        size: 7.5rem;
+    }
+}
+
+h2 {
+    @include headings;
+    font: {
+        weight: 300;
+        size: 3rem;
+    }
+}
+
+p {
+    text-indent: 12.5%;
+    font: {
+        size: 1.5rem;
+        family: Segoe;
+        variation-settings: "wght" 400, "opsz" 30;
+    }
+}
+
+banner {
+    display: flex;
+    flex-direction: column;
+    background-color: $main;
+    color: white;
+    align-items: center;
+    padding-block: 12rem;
+    h1,
+    h2 {
+        margin-block: 0.5rem;
+    }
+}
+
+separator {
+    svg {
+        height: 5rem;
+        width: 150%;
+        path {
+            fill: $main;
+        }
+    }
+}
+
+section {
+    padding: {
+        block: 3rem;
+        inline: 12.5%;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    background-color: #252525;
+    color: white;
+    text-align: center;
+    p {
+        text-indent: 0px;
+        flex: 1;
+    }
+}
+
+a[type=button] {
+    background-color: $main;
+    color: white;
+    font-family: Segoe;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 1.25rem;
+    border-radius: 3rem;
+    text-align: center;
+    margin-block: 3rem;
+    padding-inline: 12.5%;
+    transition: all 0.25s;
+    @include shadow;
+}
+
+a[type=button]:hover {
+    background-color: #33ad2c;
+    box-shadow: 0px 10px 75px 0px rgba(0, 0, 0, 0.178);
+}
+
+a[type=button]:active {
+    background-color: #2bec21;
+}
+
+
+/* Phones */
+
+@media screen and (max-width: 30rem) {
+    banner {
+        h1 {
+            font-size: 4rem;
+            word-break: break-word;
+        }
+        h2 {
+            word-break: break-word;
+        }
+    }
+}

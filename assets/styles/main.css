@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Segoe;
+  src: url(../fonts/SegoeUI-VF.ttf);
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/Raleway-VariableFont_wght.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/Raleway-Italic-VariableFont_wght.ttf);
+  font-style: italic;
+}
+
+body,
+html {
+  margin: 0px;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+h1 {
+  font-variation-settings: "wght" 700;
+  font-family: Raleway;
+  text-align: center;
+  font-size: 7.5rem;
+}
+
+h2 {
+  font-variation-settings: "wght" 700;
+  font-family: Raleway;
+  text-align: center;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+p {
+  text-indent: 12.5%;
+  font-size: 1.5rem;
+  font-family: Segoe;
+  font-variation-settings: "wght" 400, "opsz" 30;
+}
+
+banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #5AC754;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-block: 12rem;
+}
+
+banner h1,
+banner h2 {
+  margin-block: 0.5rem;
+}
+
+separator svg {
+  height: 5rem;
+  width: 150%;
+}
+
+separator svg path {
+  fill: #5AC754;
+}
+
+section {
+  padding-block: 3rem;
+  padding-inline: 12.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #252525;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  text-indent: 0px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+a[type=button] {
+  background-color: #5AC754;
+  color: white;
+  font-family: Segoe;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1.25rem;
+  border-radius: 3rem;
+  text-align: center;
+  margin-block: 3rem;
+  padding-inline: 12.5%;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  -webkit-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+          box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+}
+
+a[type=button]:hover {
+  background-color: #33ad2c;
+  -webkit-box-shadow: 0px 10px 75px 0px rgba(0, 0, 0, 0.178);
+          box-shadow: 0px 10px 75px 0px rgba(0, 0, 0, 0.178);
+}
+
+a[type=button]:active {
+  background-color: #2bec21;
+}
+
+/* Phones */
+@media screen and (max-width: 30rem) {
+  banner h1 {
+    font-size: 4rem;
+    word-break: break-word;
+  }
+  banner h2 {
+    word-break: break-word;
+  }
+}
+/*# sourceMappingURL=main.css.map */
