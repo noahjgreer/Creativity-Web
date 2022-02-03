@@ -58,7 +58,7 @@ banner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-block: 12rem;
+  padding-block: 6rem;
 }
 
 banner h1,
@@ -75,7 +75,8 @@ separator svg path {
   fill: #5AC754;
 }
 
-section {
+section,
+article {
   padding-block: 3rem;
   padding-inline: 12.5%;
   display: -webkit-box;
@@ -97,6 +98,25 @@ footer {
   background-color: #252525;
   color: white;
   text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer p {
@@ -104,6 +124,14 @@ footer p {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+a[type=button],
+a[type=button2] {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 a[type=button] {
@@ -129,12 +157,74 @@ a[type=button]:hover {
           box-shadow: 0px 10px 75px 0px rgba(0, 0, 0, 0.178);
 }
 
-a[type=button]:active {
-  background-color: #2bec21;
+a[type=button]:active,
+a[type=button2]:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+a[type=button2] {
+  background-color: white;
+  color: #5AC754;
+  font-family: Segoe;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1.25rem;
+  border-radius: 3rem;
+  text-align: center;
+  margin-block: 3rem;
+  padding-inline: 12.5%;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  -webkit-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+          box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+}
+
+a[type=button2]:hover {
+  background-color: #d9ffd7;
+  -webkit-box-shadow: 0px 10px 75px 0px rgba(0, 0, 0, 0.178);
+          box-shadow: 0px 10px 75px 0px rgba(0, 0, 0, 0.178);
+}
+
+gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+gallery > div {
+  -webkit-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+          box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem;
+  padding-top: 7.5rem;
+  padding-bottom: 0rem;
+  min-width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem;
 }
 
 /* Phones */
-@media screen and (max-width: 30rem) {
+@media screen and (max-width: 35rem) {
   banner h1 {
     font-size: 4rem;
     word-break: break-word;
