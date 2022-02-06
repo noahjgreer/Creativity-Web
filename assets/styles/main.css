@@ -21,6 +21,16 @@ html {
   overflow-x: hidden;
   position: relative;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h1 {
@@ -67,12 +77,17 @@ banner {
       -ms-flex-align: center;
           align-items: center;
   padding-block: 6.65rem;
+  width: 100%;
 }
 
 banner h1,
 banner h2 {
   color: white;
   margin-block: 0.5rem;
+}
+
+separator {
+  width: 100%;
 }
 
 separator svg {
@@ -116,6 +131,7 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 2rem;
+  width: 100%;
 }
 
 footer div {
@@ -274,11 +290,12 @@ gallery > div {
 }
 
 card {
+  margin-block: 3rem;
+  margin-inline: 12.5%;
   -webkit-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
           box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
   border-radius: 3rem;
   padding: 3rem;
-  margin-block: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,7 +307,7 @@ card {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 100%;
+  width: 75%;
 }
 
 card > div {
