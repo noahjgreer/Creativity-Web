@@ -225,10 +225,13 @@ gallery {
 }
 
 card {
+    /*
     margin: {
         block: 3rem;
         inline: 12.5%;
     }
+    */
+    margin: auto;
     @include shadow;
     border-radius: 3rem;
     padding: 3rem;
@@ -239,6 +242,7 @@ card {
     width: 75%;
     >div {
         border-radius: 3rem;
+        min-width: 20rem;
         width: 45%;
         margin: 0.5rem;
         display: flex;
