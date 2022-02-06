@@ -10,6 +10,6 @@
 | Project | Lead |
 |---------|-------|
 |[Creativity Website](https://creativity-proj.netlify.app/projects/creativity-website)|@woahnoah07|
-|Creativity Datapack (Minecraft)|@woahnoah07|
-|Imagination|@woahnoah07|
-|Entity Handler (Minecraft)|@woahnoah07|
+|Creativity Datapack (Minecraft)|@noahjgreer|
+|Imagination|@noahjgreer|
+|Entity Handler (Minecraft)|@noahjgreer|
