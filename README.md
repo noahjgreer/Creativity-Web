@@ -9,7 +9,7 @@
 ### All Projects
 | Project | Lead |
 |---------|-------|
-|[Creativity Website](https://creativity-proj.netlify.app/projects/creativity-website)|@woahnoah07|
+|[Creativity Website](https://creativity-proj.netlify.app/projects/creativity-website)|@noahjgreer|
 |Creativity Datapack (Minecraft)|@noahjgreer|
 |Imagination|@noahjgreer|
 |Entity Handler (Minecraft)|@noahjgreer|
