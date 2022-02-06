@@ -27,6 +27,7 @@ h1 {
   font-variation-settings: "wght" 700;
   font-family: -apple-system, BlinkMacSystemFont, Raleway;
   text-align: center;
+  color: #252525;
   font-size: 7.5rem;
 }
 
@@ -34,15 +35,23 @@ h2 {
   font-variation-settings: "wght" 700;
   font-family: -apple-system, BlinkMacSystemFont, Raleway;
   text-align: center;
+  color: #252525;
   font-weight: 300;
   font-size: 3rem;
 }
 
 p {
+  color: #252525;
   text-indent: 12.5%;
   font-size: 1.5rem;
   font-family: Segoe;
   font-variation-settings: "wght" 400, "opsz" 30;
+}
+
+img {
+  -webkit-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+          box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+  border-radius: 3rem;
 }
 
 banner {
@@ -54,15 +63,15 @@ banner {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #5AC754;
-  color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-block: 6rem;
+  padding-block: 6.65rem;
 }
 
 banner h1,
 banner h2 {
+  color: white;
   margin-block: 0.5rem;
 }
 
@@ -227,6 +236,9 @@ gallery > div {
 
 .generic {
   background-color: white;
+}
+
+.generic h1 {
   color: #5AC754;
 }
 
@@ -262,6 +274,10 @@ gallery > div {
 }
 
 card {
+  -webkit-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+          box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+  border-radius: 3rem;
+  padding: 3rem;
   margin-block: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,22 +287,15 @@ card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-card > img {
-  margin: 0.5rem;
-  width: 40%;
-  min-width: 20rem;
-  border-radius: 3rem;
-  -webkit-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
-          box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
-  aspect-ratio: 1;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
 }
 
 card > div {
+  border-radius: 3rem;
+  width: 45%;
   margin: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,7 +304,6 @@ card > div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 55%;
 }
 
 card > div a[type=button] {
