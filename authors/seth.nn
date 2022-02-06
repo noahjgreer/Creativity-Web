@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="icon" type="image/svg" href="../assets/images/favicon.svg">
+    <title>Seth</title>
+</head>
+
+<body>
+    <banner>
+        <h1>Green Hunter Studios</h1>
+    </banner>
+    <separator>
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+        </svg>
+    </separator>
+    <section>
+        <h2>What are we even doing now?</h2>
+        <p>Nobody seems to know. All that we know, is that fatness tastes good, and joebaba is coming to eat a bunch of Seth's pickled toes.</p>
+    </section>
+    <section>
+        <gallery>
+            <div style="background-image: url(https://d33wubrfki0l68.cloudfront.net/assets/images/d2a5e5909fe990b9151d0b2ce55e193d1955fc2a/mbr-1920x1280.jpg); color: white;">
+                <h2>If I ever make an official website it's gonna be Joe Biden!</h2>
+                <a type="button">Let's Check</a>
+            </div>
+            <div>
+                <h2>Now I wanna learn HTML, I wanna make my own website for my channel!</h2>
+                <a type="button">Okay!</a>
+            </div>
+            <div>
+                <h2>Remind me to order a green screen stand, for my channel.</h2>
+                <a type="button">You Smell.</a>
+            </div>
+        </gallery>
+
+    </section>
+    <footer>
+        <p style="color: white">I like Seth's Pizza Popcicle ® It's jum</p>
+    </footer>
+</body>
+
+</html>
