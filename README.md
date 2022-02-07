@@ -23,6 +23,7 @@
 - [ ] Make it Print Friendly?
 - [ ] Make the Submit page.
 - [ ] Make the Support Us page.
+- [x] Integrate Github Webhook with the Discord Server for changes
 
 ---
 ## Quick Directory
