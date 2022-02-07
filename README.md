@@ -5,18 +5,24 @@
 
 ---
 ## Todo
-- [ ] Make the Discord Logo on the Main Page smaller.
-- [ ] Write "We're Expecting You" text.
-- [ ] Make a footer
-- [ ] Link the "Discover" button.
-- [ ] Make the "Join the Server" button blurple.
-- [ ] Make a Submit page stub.
-- [ ] Make a Support Us page stub.
+- [x] Make the Discord Logo on the Main Page smaller.
+- [x] Write "We're Expecting You" text.
+- [x] Link the "Discover" button.
+- [X] Make the "Join the Server" button blurple.
+- [x] Make a Submit page stub.
+- [x] Make a Support Us page stub.
 - [ ] Make an Imagination Page.
 - [ ] Make an Entity Handler page.
 - [ ] Finish the Creativity Website page.
 - [ ] Finish the Creativity Minecraft page.
-
+- [ ] Properly Name all the Pages in the head.
+- [ ] ! Optimize the Pages for Mobile Devices!
+- [ ] ! Make Social Sharing images and text!
+- [ ] ! Make Mobile Icons!
+- [ ] ! Make a footer
+- [ ] Make it Print Friendly?
+- [ ] Make the Submit page.
+- [ ] Make the Support Us page.
 
 ---
 ## Quick Directory

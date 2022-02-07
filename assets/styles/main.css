@@ -66,6 +66,13 @@ img {
   border-radius: 3rem;
 }
 
+iframe {
+  border: none;
+  border-radius: 3rem;
+  -webkit-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+          box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+}
+
 banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,9 +307,13 @@ gallery > div:hover {
           align-items: center;
 }
 
-.exclude-shadow {
+.no-shadow {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.no-border {
+  border-radius: 0px;
 }
 
 card {
@@ -319,16 +330,18 @@ card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 75%;
 }
 
+card iframe {
+  aspect-ratio: 1;
+}
+
 card > div {
-  border-radius: 3rem;
-  min-width: 20rem;
   width: 45%;
+  border-radius: 3rem;
   margin: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,6 +354,15 @@ card > div {
 
 card > div a[type=button] {
   margin-block: 0.5rem;
+  margin-inline: 20%;
+}
+
+.small-card-side .card-img {
+  width: 20%;
+}
+
+.small-card-side .card-text {
+  width: 65%;
 }
 
 a[type=button].discord {
