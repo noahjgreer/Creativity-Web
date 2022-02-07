@@ -1,8 +1,7 @@
 # Creativity Website
 *This site is the directory to the projects housed and hosted by Creativity*
 
-## Website
-[Creativity Website](https://creativity-proj.netlify.app "Visit the Creativity Webpage")
+## [Visit the Website](https://creativity-proj.netlify.app/)
 
 ---
 ## Todo
