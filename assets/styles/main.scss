@@ -42,6 +42,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -62,6 +63,7 @@ h2 {
 p {
     color: $slate;
     text-indent: 12.5%;
+    width: 100%;
     font: {
         size: 1.5rem;
         family: Segoe;
@@ -81,6 +83,8 @@ banner {
     align-items: center;
     padding-block: 6.65rem;
     width: 100%;
+    background-position: center;
+    background-size: cover;
     h1,
     h2 {
         color: white;
@@ -101,7 +105,7 @@ separator {
 
 section,
 article {
-    padding: {
+    margin: {
         block: 3rem;
         inline: 12.5%;
     }
@@ -199,6 +203,10 @@ gallery {
         border-radius: 3rem;
         flex-direction: column;
         margin: 1rem;
+        transition: all 0.5s;
+    }
+    >div:hover {
+        transform: scale(1.05);
     }
 }
 
@@ -224,14 +232,12 @@ gallery {
     }
 }
 
+.exclude-shadow {
+    box-shadow: none;
+}
+
 card {
-    /*
-    margin: {
-        block: 3rem;
-        inline: 12.5%;
-    }
-    */
-    margin: auto;
+    margin-block: 3rem;
     @include shadow;
     border-radius: 3rem;
     padding: 3rem;
@@ -300,7 +306,7 @@ a {
 
 /* Phones */
 
-@media screen and (max-width: 35rem) {
+@media screen and (max-width: 400px) {
     banner {
         h1 {
             font-size: 4rem;
@@ -308,6 +314,10 @@ a {
         }
         h2 {
             word-break: break-word;
+        }
+        article,
+        section {
+            margin-inline: 0%;
         }
     }
 }
