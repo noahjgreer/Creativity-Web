@@ -25,6 +25,6 @@
 | Project | Lead |
 |---------|-------|
 |[Creativity Website](https://creativity-proj.netlify.app/projects/creativity-website)|@noahjgreer|
-|Creativity Datapack (Minecraft)|@noahjgreer|
-|Imagination|@noahjgreer|
-|Entity Handler (Minecraft)|@noahjgreer|
+|[Creativity Datapack (Minecraft)](https://creativity-proj.netlify.app/projects/creativity-mc)|@noahjgreer|
+|[Imagination](https://creativity-proj.netlify.app/projects/imagination)|@noahjgreer|
+|[Entity Handler (Minecraft)](https://creativity-proj.netlify.app/projects/entity-handler)|@noahjgreer|
