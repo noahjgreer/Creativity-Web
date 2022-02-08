@@ -11,7 +11,7 @@
 - [X] Make the "Join the Server" button blurple.
 - [x] Make a Submit page stub.
 - [x] Make a Support Us page stub.
-- [ ] Make a navigation system
+- [x] Make a navigation system
 - [ ] Make an Imagination Page.
 - [ ] Make an Entity Handler page.
 - [ ] Finish the Creativity Website page.

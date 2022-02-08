@@ -82,7 +82,7 @@ iframe {
     @include shadow;
 }
 
-banner {
+header {
     display: flex;
     flex-direction: column;
     background-color: $main;
@@ -118,6 +118,46 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+nav {
+    @include shadow;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    padding-inline: 3rem;
+    z-index: 99;
+    position: fixed;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    width: 90%;
+    background-color: white;
+    a[type=button] {
+        padding: 0.3rem;
+        font-size: 1.25rem;
+        font-weight: 400;
+        padding-inline: 1rem;
+        margin-inline: 1rem;
+    }
+    p {
+        text-indent: 0px;
+        margin: 0;
+        width: auto;
+        padding: 1rem;
+    }
+    img {
+        width: auto;
+        height: 3.25rem;
+    }
+    #home {
+        @include shadow;
+        transition: all 0.25s;
+    }
+    #home:hover {
+        transform: scale(1.125) translateY(0.15rem);
+    }
 }
 
 footer {
@@ -256,6 +296,9 @@ card {
     align-items: center;
     justify-content: space-around;
     width: 75%;
+    h2 {
+        margin: 0px;
+    }
     iframe {
         aspect-ratio: 1;
     }
@@ -329,7 +372,7 @@ a {
 /* Phones */
 
 @media screen and (max-width: 400px) {
-    banner {
+    header {
         h1 {
             font-size: 4rem;
             word-break: break-word;

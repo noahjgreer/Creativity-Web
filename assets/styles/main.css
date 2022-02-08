@@ -73,7 +73,7 @@ iframe {
           box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
 }
 
-banner {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,8 +91,8 @@ banner {
   background-size: cover;
 }
 
-banner h1,
-banner h2 {
+header h1,
+header h2 {
   color: white;
   margin-block: 0.5rem;
 }
@@ -124,6 +124,61 @@ article {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+nav {
+  -webkit-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+          box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  padding-inline: 3rem;
+  z-index: 99;
+  position: fixed;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3.5rem;
+  width: 90%;
+  background-color: white;
+}
+
+nav a[type=button] {
+  padding: 0.3rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding-inline: 1rem;
+  margin-inline: 1rem;
+}
+
+nav p {
+  text-indent: 0px;
+  margin: 0;
+  width: auto;
+  padding: 1rem;
+}
+
+nav img {
+  width: auto;
+  height: 3.25rem;
+}
+
+nav #home {
+  -webkit-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+          box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+nav #home:hover {
+  -webkit-transform: scale(1.125) translateY(0.15rem);
+          transform: scale(1.125) translateY(0.15rem);
 }
 
 footer {
@@ -335,6 +390,10 @@ card {
   width: 75%;
 }
 
+card h2 {
+  margin: 0px;
+}
+
 card iframe {
   aspect-ratio: 1;
 }
@@ -418,15 +477,15 @@ a {
 
 /* Phones */
 @media screen and (max-width: 400px) {
-  banner h1 {
+  header h1 {
     font-size: 4rem;
     word-break: break-word;
   }
-  banner h2 {
+  header h2 {
     word-break: break-word;
   }
-  banner article,
-  banner section {
+  header article,
+  header section {
     margin-inline: 0%;
   }
 }

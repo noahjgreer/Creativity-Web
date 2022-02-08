@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Segoe;
+    src: url(../fonts/SegoeUI-VF.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+}
+
+@mixin headings {
+    font: {
+        variation-settings: "wght" 700;
+        family: -apple-system, BlinkMacSystemFont, Raleway;
+    }
+    text-align: center;
+    color: $slate;
+}
+
+@mixin shadow {
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.178);
+}
+
+// Variables
+$main: #5AC754;
+$slate: #252525;
+$blurple: #5865F2;
+// Variables
+body,
+html {
+    margin: 0px;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    scroll-behavior: smooth;
+    aspect-ratio: 2/1;
+}
+
+h1 {
+    @include headings;
+    font: {
+        size: 50%;
+    }
+}
+
+section {
+    flex: 1;
+    min-width: 3rem;
+}
